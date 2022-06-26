@@ -16,6 +16,31 @@
                 console.log(`${numA} * ${numB} = ${numA * numB}`);
             }
         }
+
+        // 1 
+        // 1 2 
+        // 1 2 3 
+        // 1 2 3 4 
+        // 1 2 3 4 5 
+        // 1 2 3 4 5 6 
+        // 1 2 3 4 5 6 7 
+        // 1 2 3 4 5 6 7 8
+
+        let forPrint = ''; // 1 2 3 
+        for (let i = 1; i < 9; i++) {
+            forPrint += `${i} `;
+            console.log(`${forPrint}`);
+        }
+
+
+        //https://en.wikipedia.org/wiki/1_%2B_2_%2B_3_%2B_4_%2B_%E2%8B%AF
+        let n = 1000;
+        let result = 0;
+        for (let num = 1; num <= n; num++) {
+            result += num;
+        }
+        console.log(`result 1+2+3... +100= ${result}`);
+        console.log(`result 1+2+3... +100= ${n*(n + 1)/2}`);
     </script>
 </body>
 
